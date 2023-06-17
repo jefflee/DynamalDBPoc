@@ -1,6 +1,6 @@
 // Load the AWS SDK for JS
 var AWS = require("aws-sdk");
-AWS.config.update({region: 'us-east-1'});
+AWS.config.update({region: 'ap-northeast-1'});
 const tableName = "basicSongsTable"
 
 // -----------------------------------------
