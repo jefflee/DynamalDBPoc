@@ -5,7 +5,7 @@ TABLE_NAME = "basicSongsTable"
 
 # -------------------------------------
 # Creating a DynamoDB *client* for use:
-dynamodb_client = boto3.client('dynamodb', region_name="us-east-1")
+dynamodb_client = boto3.client('dynamodb', region_name="ap-northeast-1")
 
 # Use the DynamoDB client get item method to get a single item
 response = dynamodb_client.get_item(
@@ -52,7 +52,7 @@ print(response['Items'])
 
 # --------------------------------------------
 # Creating a DynamoDB *Table resource* for use
-dynamodb = boto3.resource('dynamodb', region_name="us-east-1")
+dynamodb = boto3.resource('dynamodb', region_name="ap-northeast-1")
 table = dynamodb.Table(TABLE_NAME)
 
 # Use the DynamoDB Table resource get item method to get a single item
