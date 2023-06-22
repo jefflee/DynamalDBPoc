@@ -1,0 +1,272 @@
+{
+	"info": {
+		"_postman_id": "834d9a09-e02e-4a23-992b-167676ecb1c0",
+		"name": "GSS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createCustomer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"customer_id\": \"{{CUSTOMER_ID}}\",\n    \"profile_data\": {\n        \"stuff\": \"and\",\n        \"more\": \"stuff\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{API_GATEWAY_ID}}.execute-api.us-east-1.amazonaws.com/dev/customer",
+					"protocol": "https",
+					"host": [
+						"{{API_GATEWAY_ID}}",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCustomer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{API_GATEWAY_ID}}.execute-api.us-east-1.amazonaws.com/dev/customer/{{CUSTOMER_ID}}",
+					"protocol": "https",
+					"host": [
+						"{{API_GATEWAY_ID}}",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"customer",
+						"{{CUSTOMER_ID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createSurvey",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"customer_id\": \"b0d72351-ed83-4fec-af69-9e307faebaa8\",\n    \"survey_data\": [\n        {\n            \"question_number\": \"1\",\n            \"question_type\": \"rating\",\n            \"question\": \"What is up with you?\"\n        },\n        {\n            \"question_number\": \"2\",\n            \"question_type\": \"rating\",\n            \"question\": \"What is up with you?\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{API_GATEWAY_ID}}.execute-api.us-east-1.amazonaws.com/dev/survey",
+					"protocol": "https",
+					"host": [
+						"{{API_GATEWAY_ID}}",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"survey"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getSurvey",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{API_GATEWAY_ID}}.execute-api.us-east-1.amazonaws.com/dev/survey/{{SURVEY_ID}}",
+					"protocol": "https",
+					"host": [
+						"{{API_GATEWAY_ID}}",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"survey",
+						"{{SURVEY_ID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCustomerSurveys",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{API_GATEWAY_ID}}.execute-api.us-east-1.amazonaws.com/dev/customer/{{CUSTOMER_ID}}/surveys",
+					"protocol": "https",
+					"host": [
+						"{{API_GATEWAY_ID}}",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"customer",
+						"{{CUSTOMER_ID}}",
+						"surveys"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createResponse",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"survey_id\": \"{{SURVEY_ID}}\",\n    \"response_data\": [\n        {\n            \"question_type\": \"rating\",\n            \"response_value\": \"8\",\n            \"question_number\": \"1\"\n        },\n        {\n            \"question_type\": \"text\",\n            \"response_value\": \"I'm good yo\",\n            \"question_number\": \"2\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{API_GATEWAY_ID}}.execute-api.us-east-1.amazonaws.com/dev/response",
+					"protocol": "https",
+					"host": [
+						"{{API_GATEWAY_ID}}",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"response"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getResponse",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{API_GATEWAY_ID}}.execute-api.us-east-1.amazonaws.com/dev/response/{{RESPONSE_ID}}",
+					"protocol": "https",
+					"host": [
+						"{{API_GATEWAY_ID}}",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"response",
+						"{{RESPONSE_ID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllSurveyResponses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{API_GATEWAY_ID}}.execute-api.us-east-1.amazonaws.com/dev/survey/{{SURVEY_ID}}/responses",
+					"protocol": "https",
+					"host": [
+						"{{API_GATEWAY_ID}}",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"survey",
+						"{{SURVEY_ID}}",
+						"responses"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "33951b71-c6fe-4da9-8609-a6bc179f3d97",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "77a8a242-646d-4519-b719-5bae6c8595e5",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "a86bb0f1-5c92-46c6-954a-1068584830fa",
+			"key": "API_GATEWAY_ID",
+			"value": "REPLACE_ME"
+		},
+		{
+			"id": "a6f94d2f-1e9e-4720-8ae5-87c27b378f3a",
+			"key": "SURVEY_ID",
+			"value": "REPLACE_ME"
+		},
+		{
+			"id": "24a05b14-e52d-45f2-832d-2356212d8388",
+			"key": "RESPONSE_ID",
+			"value": "REPLACE_ME"
+		},
+		{
+			"id": "8ebc44b0-5876-4de0-a299-cc89890898cf",
+			"key": "CUSTOMER_ID",
+			"value": "b0d72351-ed83-4fec-af69-9e307faebaa8"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
