@@ -20,12 +20,12 @@
 					}
 				},
 				"url": {
-					"raw": "https://{{API_GATEWAY_ID}}.execute-api.us-east-1.amazonaws.com/dev/customer",
+					"raw": "https://{{API_GATEWAY_ID}}.execute-api.ap-northeast-1.amazonaws.com/dev/customer",
 					"protocol": "https",
 					"host": [
 						"{{API_GATEWAY_ID}}",
 						"execute-api",
-						"us-east-1",
+						"ap-northeast-1",
 						"amazonaws",
 						"com"
 					],
@@ -43,12 +43,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://{{API_GATEWAY_ID}}.execute-api.us-east-1.amazonaws.com/dev/customer/{{CUSTOMER_ID}}",
+					"raw": "https://{{API_GATEWAY_ID}}.execute-api.ap-northeast-1.amazonaws.com/dev/customer/{{CUSTOMER_ID}}",
 					"protocol": "https",
 					"host": [
 						"{{API_GATEWAY_ID}}",
 						"execute-api",
-						"us-east-1",
+						"ap-northeast-1",
 						"amazonaws",
 						"com"
 					],
@@ -76,12 +76,12 @@
 					}
 				},
 				"url": {
-					"raw": "https://{{API_GATEWAY_ID}}.execute-api.us-east-1.amazonaws.com/dev/survey",
+					"raw": "https://{{API_GATEWAY_ID}}.execute-api.ap-northeast-1.amazonaws.com/dev/survey",
 					"protocol": "https",
 					"host": [
 						"{{API_GATEWAY_ID}}",
 						"execute-api",
-						"us-east-1",
+						"ap-northeast-1",
 						"amazonaws",
 						"com"
 					],
@@ -99,12 +99,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://{{API_GATEWAY_ID}}.execute-api.us-east-1.amazonaws.com/dev/survey/{{SURVEY_ID}}",
+					"raw": "https://{{API_GATEWAY_ID}}.execute-api.ap-northeast-1.amazonaws.com/dev/survey/{{SURVEY_ID}}",
 					"protocol": "https",
 					"host": [
 						"{{API_GATEWAY_ID}}",
 						"execute-api",
-						"us-east-1",
+						"ap-northeast-1",
 						"amazonaws",
 						"com"
 					],
@@ -123,12 +123,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://{{API_GATEWAY_ID}}.execute-api.us-east-1.amazonaws.com/dev/customer/{{CUSTOMER_ID}}/surveys",
+					"raw": "https://{{API_GATEWAY_ID}}.execute-api.ap-northeast-1.amazonaws.com/dev/customer/{{CUSTOMER_ID}}/surveys",
 					"protocol": "https",
 					"host": [
 						"{{API_GATEWAY_ID}}",
 						"execute-api",
-						"us-east-1",
+						"ap-northeast-1",
 						"amazonaws",
 						"com"
 					],
@@ -157,12 +157,12 @@
 					}
 				},
 				"url": {
-					"raw": "https://{{API_GATEWAY_ID}}.execute-api.us-east-1.amazonaws.com/dev/response",
+					"raw": "https://{{API_GATEWAY_ID}}.execute-api.ap-northeast-1.amazonaws.com/dev/response",
 					"protocol": "https",
 					"host": [
 						"{{API_GATEWAY_ID}}",
 						"execute-api",
-						"us-east-1",
+						"ap-northeast-1",
 						"amazonaws",
 						"com"
 					],
@@ -180,12 +180,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://{{API_GATEWAY_ID}}.execute-api.us-east-1.amazonaws.com/dev/response/{{RESPONSE_ID}}",
+					"raw": "https://{{API_GATEWAY_ID}}.execute-api.ap-northeast-1.amazonaws.com/dev/response/{{RESPONSE_ID}}",
 					"protocol": "https",
 					"host": [
 						"{{API_GATEWAY_ID}}",
 						"execute-api",
-						"us-east-1",
+						"ap-northeast-1",
 						"amazonaws",
 						"com"
 					],
@@ -204,12 +204,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://{{API_GATEWAY_ID}}.execute-api.us-east-1.amazonaws.com/dev/survey/{{SURVEY_ID}}/responses",
+					"raw": "https://{{API_GATEWAY_ID}}.execute-api.ap-northeast-1.amazonaws.com/dev/survey/{{SURVEY_ID}}/responses",
 					"protocol": "https",
 					"host": [
 						"{{API_GATEWAY_ID}}",
 						"execute-api",
-						"us-east-1",
+						"ap-northeast-1",
 						"amazonaws",
 						"com"
 					],
